@@ -1,0 +1,158 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* header */
+
+header {
+    float: left;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+header ul {
+   list-style: none;
+   padding: 0;
+}
+
+header ul li {
+    padding: 20px;
+    font-size: 25px; 
+    transition: font-size 1s ease 0s, font-weight 0.5s ease 0s;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+a:hover:before {
+    width:100%;
+    right: 0;
+    transition: width 0.5s ease 0s, right 0.5s ease 0s;
+}
+a:before {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    right: 0;
+    position: absolute;
+    background: #2F74D0;
+    width: 0;
+    transition: width 1s ease 0s, right 0.5s ease 0s;
+}
+
+.current {
+    font-size: 30px;
+    font-weight: 700;
+    transition: font-size 1s ease 0s, font-weight 0.5s ease 0s;
+}
+
+/* body */
+
+main {
+    float: right;
+    background: #a3e1ff;
+    width: 80%;
+}
+
+/* bio */
+
+section {
+    width: 75%;
+    font-size: 20px;
+    color: #00072D;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* projects */
+
+.project-card {
+    width: 80%;
+    background: #F0F7F4;
+    border: #eee 1px solid;
+    border-radius: 2px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.project-card img {
+    width: 100%;
+}
+
+.project-card i {
+    font-size: 30px;
+}
+
+.project-description {
+    padding: 20px;
+}
+
+.project-card button {
+    text-decoration: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.project-card button:hover {
+    background: red;
+}
+
+.project-card button a {
+    text-decoration: none;
+    color: inherit;
+}
+/* contact */
+
+.contact {
+    text-align: center;
+}
+
+.contact-links i {
+    font-size: 40px;
+    color: black;
+    padding: 10px;
+    transition: font-size 0.5s ease 0s
+}
+
+.contact-links i:hover {
+    position: relative;
+    font-size: 60px;
+    transition: font-size 0.5s ease 0s
+}
+
+@media (max-width: 767.98px) { 
+    header {
+        float: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: auto;
+        background: white;
+    } 
+    header ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+    .current {
+        font-size: 25px;
+    }
+    main {
+        float: none;
+        width: 100%;
+    }
+}
