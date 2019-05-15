@@ -62,17 +62,23 @@ main {
     width: 80%;
 }
 
+body {
+    scroll-snap-type: y mandatory;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+}
 /* bio */
 
 section {
     width: 75%;
     font-size: 20px;
     color: #00072D;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start;
 }
 
 /* projects */
