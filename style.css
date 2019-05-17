@@ -60,13 +60,13 @@ main {
     float: right;
     background: #a3e1ff;
     width: 80%;
-}
-
-body {
     scroll-snap-type: y mandatory;
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
+    height: 100vh;
+    overflow: auto;
 }
+
 /* bio */
 
 section {
@@ -119,6 +119,14 @@ section {
     text-decoration: none;
     color: inherit;
 }
+
+/* about */
+
+.about {
+    line-height: 42px;
+    font-size: 35px;
+}
+
 /* contact */
 
 .contact {
