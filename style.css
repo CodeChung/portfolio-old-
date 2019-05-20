@@ -167,11 +167,18 @@ section {
         margin: 0 auto;
         font-size: 15px;
     }
+    header ul li {
+        font-size: 20px; 
+    }
     .current {
-        font-size: 25px;
+        font-size: 23px;
     }
     main {
         float: none;
         width: 100%;
+    }
+    .about {
+        line-height: 30px;
+        font-size: 18px;
     }
 }
