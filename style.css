@@ -36,7 +36,6 @@ a:hover:before {
     transition: width 0.5s ease 0s, right 0.5s ease 0s;
 }
 a:before {
-    background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
     display: block;
@@ -60,11 +59,15 @@ main {
     float: right;
     background: #a3e1ff;
     width: 80%;
-    scroll-snap-type: y mandatory;
-    scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
     height: 100vh;
-    overflow: auto;
+    overflow: visible;
+}
+
+.wrapper-1 {
+    background: #8AF3FF;
+}
+.wrapper-2 {
+    background: #78C0E0;
 }
 
 /* bio */
@@ -78,7 +81,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start;
 }
 
 /* projects */
@@ -90,7 +92,6 @@ section {
     border-radius: 2px;
     margin: 0 auto;
     font-size: 18px;
-    font-family: 'Open Sans', sans-serif !important;
 }
 
 .project-card img {
@@ -105,6 +106,10 @@ section {
     padding: 20px;
 }
 
+.project-description h2, .project-description p {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
 .project-card button {
     text-decoration: none;
     border-radius: 3px;
@@ -112,7 +117,7 @@ section {
 }
 
 .project-card button:hover {
-    background: red;
+    background: #98D2EB;
 }
 
 .project-card button a {
@@ -124,7 +129,7 @@ section {
 
 .about {
     line-height: 42px;
-    font-size: 35px;
+    font-size: 20px;
 }
 
 /* contact */

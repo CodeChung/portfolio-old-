@@ -16,11 +16,9 @@ function navbarAnimate() {
 }
 
 function slideMain(position) {
-	$('main').css("overflow","visible");
 	$("body, html").animate({
 		scrollTop: position
 	});
-	$('main').css("overflow","scoll");
 }
 
 function slideOnClick() {
@@ -69,7 +67,6 @@ let position = $(window).scrollTop();
 
 
 $(document).keydown(function(e) {
-	$('main').css("overflow","visible");
 	currentSection = findCurrentView().attr("id");
 	console.log(currentSection)
 	switch (e.which) {
@@ -85,7 +82,6 @@ $(document).keydown(function(e) {
 		default: return;
 	}
 	e.preventDefault();
-	$('main').css("overflow","auto");
 })
 
 function scrollSnap(currentSection, direction) {
@@ -94,6 +90,11 @@ function scrollSnap(currentSection, direction) {
 	let position = $(sectionToSlide).offset().top;
 	slideMain(position);
 };
+function scrollScreen() {
+	$.scrollify({
+	  section : "section",
+	});
+}
 
 $(navbarAnimate);
 $(slideOnClick);
