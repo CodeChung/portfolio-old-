@@ -184,9 +184,19 @@ section {
 
 @media only screen and (max-width: 600px) {
     header ul li {
-        font-size: 15px;
+        font-size: 1.1rem;
     }
     .current {
-        font-size: 18px;
+        font-size: 1.2rem;
+    }
+} 
+
+@media only screen and (max-width: 400px) {
+    header ul li {
+        font-size: 0.9rem;
+        padding: 20px 5px!important;
+    }
+    .current {
+        font-size: 1.1rem;
     }
 } 
