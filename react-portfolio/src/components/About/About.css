@@ -1,0 +1,28 @@
+/* -- About -- */
+
+.about {
+    font-size: 15px;
+    width: 100%;
+    background: rgb(179, 255, 251);
+}
+
+.about p {
+    padding: 25px;
+}
+  
+@media screen and (min-width: 600px) {
+    .about {
+        line-height: 30px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about {
+        line-height: 42px;
+        font-size: 20px;
+        padding: 0 100px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+}

@@ -1,0 +1,103 @@
+/* -- Header -- */
+
+.current-link {
+  font-weight: 700;
+}
+
+header {
+  float: left;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background: white;
+}
+
+header ul {
+ list-style: none;
+ padding: 0;
+ display: flex;
+ margin: 0 auto;
+}
+
+header ul a {
+  font-size: 0.9rem;
+  padding: 20px 5px;
+  transition: font-size .5s ease 0s, font-weight 0.3s ease 0s;
+}
+
+header ul a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+a:hover:before {
+  width: 100%;
+  right: 0;
+  transition: width 0.3s ease 0s, right 0.3s ease 0s;
+}
+
+a:before {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1.5px;
+  right: 0; 
+  position: absolute;
+  background: #2F74D0;
+  width: 0;
+  transition: width 1s ease 0s, right 0.5s ease 0s;
+}
+
+@media screen and (min-width:400px) {
+    header ul a {
+      font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        float: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: auto;
+        background: white;
+    } 
+    header ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    header ul a {
+        font-size: 20px; 
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+      float: left;
+      width: 20%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      position: fixed;
+    }
+  
+    header ul {
+      flex-direction: column;
+    }
+  
+    header ul a {
+      font-size: 1.6rem !important;
+      padding: 20px;
+      margin: 5px;
+    }
+
+    a:hover:before {
+        width: 90%;
+    }
+}  
