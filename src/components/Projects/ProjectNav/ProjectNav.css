@@ -1,0 +1,22 @@
+/* -- Project Nav -- */
+.project-navigation {
+  width: 80%;
+  align-items: flex-start;
+  height: auto;
+  font-size: .7rem;
+  display: flex;
+  border-radius: 7px 7px 0 0;
+}
+
+.project-navigation a {
+  padding: 10px 10px ;
+  text-decoration: none;
+}
+
+.project-active {
+  background: rgb(185, 204, 241);
+}
+
+.project-active-left {
+  border-radius: 7px 0 0 0;
+}
