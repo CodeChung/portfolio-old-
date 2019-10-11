@@ -45,7 +45,6 @@ class App extends React.Component {
     this.setState({ index, currentView })
   }
   onKeyPressed = event => {
-    console.log(event.key)
   }
   render() {
     const { currentView, } = this.state
