@@ -5,10 +5,24 @@
     width: 100%;
     font-size: 15px;
     line-height: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.face-pic {
+    width: 80%;
+    position: relative;
+    top: 5px;
+    left: 20px;
 }
 
 .intro h2 {
-    padding: 20px;
+    margin: 0 25px;
+    text-align: left;
+    padding: 0 15px;
+    background: whitesmoke;
+    border-radius: 5px;
+
 }
   
 @media screen and (min-width: 600px) {
@@ -25,5 +39,9 @@
         padding: 0 130px;
         margin: 0 auto;
         box-sizing: border-box;
+    }
+
+    .face-pic {
+        top:12px;
     }
 }
